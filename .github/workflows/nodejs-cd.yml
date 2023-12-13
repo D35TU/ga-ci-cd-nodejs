@@ -26,7 +26,7 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: 22
           script: |
-            cd ~/home/KDCW/apps/ga-ci-cd-nodejs
+            cd ~/apps/ga-ci-cd-nodejs
             export NVM_DIR=~/.nvm
             source ~/.nvm/nvm.sh
             git pull origin master
