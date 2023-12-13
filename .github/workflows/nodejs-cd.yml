@@ -26,9 +26,7 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: 22
           script: |
-            cd ~/apps/ga-ci-cd-nodejs
-            export NVM_DIR=~/.nvm
-            source ~/.nvm/nvm.sh
+            cd /apps/ga-ci-cd-nodejs
             git pull origin master
             git status
             npm install --only=prod
